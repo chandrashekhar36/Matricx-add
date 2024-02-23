@@ -21,20 +21,17 @@ def display_matrix(matrix):
     for row in matrix:
         print(row)
 
-# Get user input for the number of matrices, rows, and columns
 num_matrices = int(input("Enter the number of matrices: "))
 rows = int(input("Enter the number of rows for the matrices: "))
 cols = int(input("Enter the number of columns for the matrices: "))
 
-# Input matrices from the user
 matrices = []
 for _ in range(num_matrices):
     matrix = input_matrix(rows, cols)
     matrices.append(matrix)
 
-# Add matrices
 result_matrix = add_matrices(matrices)
 
-# Display the result
+
 print("\nSum of the matrices:")
 display_matrix(result_matrix)
